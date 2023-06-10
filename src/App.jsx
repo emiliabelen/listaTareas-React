@@ -15,7 +15,9 @@ function App() {
       
 
       <footer className="bg-dark text-light text-center py-4">
-        <p>&copy; Todos los derechos reservados</p>
+        
+        <p>Hecho con  <i class="bi bi-chat-heart"></i>  para el mundo</p>
+        
       </footer>
     </>
   );
