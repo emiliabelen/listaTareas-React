@@ -5,19 +5,17 @@ import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <>
-<Container className = "my-5 mainPage">
-  <h1 className="display-4 text-center text-kight">Lista de Tareas</h1>
-  <hr className="text-ligth"/>
-  <FormularioTareas ></FormularioTareas>
-</Container>
-      
-      
+<>
+      <Container className="my-5 mainPage">
+        <h1 className="display-4 text-center text-kight">Lista de Tareas</h1>
+        <hr className="text-ligth" />
+        <FormularioTareas></FormularioTareas>
+      </Container>
 
       <footer className="bg-dark text-light text-center py-4">
-        
-        <p>Hecho con  <i class="bi bi-chat-heart"></i>  para el mundo</p>
-        
+        <p>
+          Hecho con <i class="bi bi-chat-heart"></i> para el mundo
+        </p>
       </footer>
     </>
   );
