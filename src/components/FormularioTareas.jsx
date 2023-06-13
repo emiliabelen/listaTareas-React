@@ -5,15 +5,21 @@ import { useState } from "react";
 const FormularioTareas = () => {
   // console .log (props.FormularioTareas)
   const [tarea, setTarea] = useState("");
-  const [tareas, setTareas] = usteState([]);
+  const [tareas, setTareas] = useState([]);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 d-flex" controlId="tarea">
           <Form.Control
             type="text"
             placeholder="Ingrese una tarea"
-            onChange={(e) => console.log(e)}
+            onChange={(e) => setTarea(e.target.value)}
+            value={tarea}
           />
           <Button variant="primary" type="submit">
             Enviar
